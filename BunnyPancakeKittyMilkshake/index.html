@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | BunnyPancakeKittyMilkshake</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/BunnyPancakeKittyMilkshake.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/BunnyPancakeKittyMilkshake.data.br",
+        frameworkUrl: "Build/BunnyPancakeKittyMilkshake.framework.js.br",
+        codeUrl: "Build/BunnyPancakeKittyMilkshake.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "MGWorkshop",
+        productName: "BunnyPancakeKittyMilkshake",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
